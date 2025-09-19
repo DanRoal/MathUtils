@@ -5,7 +5,7 @@ pub mod operations;
 /// Returns the factorial of a number.
 /// # Examples
 /// ```
-/// use MathUtils::factorial;
+/// use mathutils::factorial;
 /// let result = factorial(5);
 /// assert_eq!(result, 120);
 /// ```
@@ -16,7 +16,7 @@ pub fn factorial(n: u128) -> u128 {
 /// Returns the maximum common divisor of two numbers.
 /// # Examples
 /// ```
-/// use MathUtils::max_com_div;
+/// use mathutils::max_com_div;
 /// let result = max_com_div(12, 15);
 /// assert_eq!(result, 3);
 /// ```
@@ -49,7 +49,7 @@ pub fn max_com_div(a: u128, b: u128) -> u128 {
 /// Checks if a number is prime (unoptimized).
 /// # Examples
 /// ```
-/// use MathUtils::is_prime;
+/// use mathutils::is_prime;
 /// let result = is_prime(7);
 /// assert_eq!(result, true);
 /// let result = is_prime(10);

@@ -3,7 +3,7 @@
 /// Returns the integer square root of a u128 number using binary search.
 /// # Examples
 /// ```
-/// use MathUtils::operations::sqrt_u128;
+/// use mathutils::operations::sqrt_u128;
 /// let result = sqrt_u128(17);
 /// assert_eq!(result, 4);
 /// ```
