@@ -5,3 +5,4 @@ Esta es una librería para herramientas de uso común de matemáticas. La idea e
 ## Funciones soportadas
 - Factorial de un número natural
 - Mayor común divisor de dos números
+- Checar si un número dado es primo

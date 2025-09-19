@@ -1,7 +1,8 @@
 /// Returns the factorial of a number.
 /// # Examples
 /// ```
-/// let result = math_utils::factorial(5);
+/// use MathUtils::factorial;
+/// let result = factorial(5);
 /// assert_eq!(result, 120);
 /// ```
 pub fn factorial(n: u64) -> u64 {
@@ -11,7 +12,8 @@ pub fn factorial(n: u64) -> u64 {
 /// Returns the maximum common divisor of two numbers.
 /// # Examples
 /// ```
-/// let result = math_utils::max_com_div(12, 15);
+/// use MathUtils::max_com_div;
+/// let result = max_com_div(12, 15);
 /// assert_eq!(result, 3);
 /// ```
 pub fn max_com_div(a: u64, b: u64) -> u64 {
@@ -39,3 +41,4 @@ pub fn max_com_div(a: u64, b: u64) -> u64 {
     }
     *common_divisors.iter().max().unwrap()
 }
+
