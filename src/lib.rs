@@ -42,3 +42,23 @@ pub fn max_com_div(a: u64, b: u64) -> u64 {
     *common_divisors.iter().max().unwrap()
 }
 
+/// Checks if a number is prime (unoptimized).
+/// # Examples
+/// ```
+/// use MathUtils::is_prime;
+/// let result = is_prime(7);
+/// assert_eq!(result, true);
+/// let result = is_prime(10);
+/// assert_eq!(result, false);
+/// ```
+pub fn is_prime(n: u64)-> bool {
+    if n <= 1 {
+        return false;
+    }
+    for i in 2..=((n as f64).sqrt() as u64) {
+        if n % i == 0 {
+            return false;
+        }
+    }
+    true    
+}
