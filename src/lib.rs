@@ -1,3 +1,7 @@
+use crate::operations::sqrt_u128;
+
+
+pub mod operations;
 /// Returns the factorial of a number.
 /// # Examples
 /// ```
@@ -5,7 +9,7 @@
 /// let result = factorial(5);
 /// assert_eq!(result, 120);
 /// ```
-pub fn factorial(n: u64) -> u64 {
+pub fn factorial(n: u128) -> u128 {
     (1..=n).product()
 }
 
@@ -16,7 +20,7 @@ pub fn factorial(n: u64) -> u64 {
 /// let result = max_com_div(12, 15);
 /// assert_eq!(result, 3);
 /// ```
-pub fn max_com_div(a: u64, b: u64) -> u64 {
+pub fn max_com_div(a: u128, b: u128) -> u128 {
     let mut divisors_a = Vec::new();
     let mut divisors_b = Vec::new();
     for i in 1..=a{
@@ -51,11 +55,11 @@ pub fn max_com_div(a: u64, b: u64) -> u64 {
 /// let result = is_prime(10);
 /// assert_eq!(result, false);
 /// ```
-pub fn is_prime(n: u64)-> bool {
+pub fn is_prime(n: u128)-> bool {
     if n <= 1 {
         return false;
     }
-    for i in 2..=((n as f64).sqrt() as u64) {
+    for i in 2..= sqrt_u128(n) {
         if n % i == 0 {
             return false;
         }
